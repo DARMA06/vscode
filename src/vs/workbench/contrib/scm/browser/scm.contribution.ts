@@ -83,7 +83,7 @@ viewsRegistry.registerViews([{
 	containerIcon: sourceControlViewIcon,
 	openCommandActionDescriptor: {
 		id: viewContainer.id,
-		mnemonicTitle: localize({ key: 'miViewSCM', comment: ['&& denotes a mnemonic'] }, "Source &&Control"),
+		mnemonicTitle: { value: localize({ key: 'miViewSCM', comment: ['&& denotes a mnemonic'] }, "Source &&Control"), original: 'Source &&Control' },
 		keybindings: {
 			primary: 0,
 			win: { primary: KeyMod.CtrlCmd | KeyMod.Shift | KeyCode.KeyG },

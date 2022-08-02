@@ -658,7 +658,7 @@ const viewDescriptor: IViewDescriptor = {
 	canMoveView: true,
 	openCommandActionDescriptor: {
 		id: viewContainer.id,
-		mnemonicTitle: nls.localize({ key: 'miViewSearch', comment: ['&& denotes a mnemonic'] }, "&&Search"),
+		mnemonicTitle: { value: nls.localize({ key: 'miViewSearch', comment: ['&& denotes a mnemonic'] }, "&&Search"), original: '&&Search' },
 		keybindings: {
 			primary: KeyMod.CtrlCmd | KeyMod.Shift | KeyCode.KeyF,
 			// Yes, this is weird. See #116188, #115556, #115511, and now #124146, for examples of what can go wrong here.

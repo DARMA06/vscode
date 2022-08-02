@@ -137,7 +137,7 @@ Registry.as<IViewsRegistry>(ViewContainerExtensions.ViewsRegistry).registerViews
 	ctorDescriptor: new SyncDescriptor(TerminalViewPane),
 	openCommandActionDescriptor: {
 		id: TerminalCommandId.Toggle,
-		mnemonicTitle: nls.localize({ key: 'miToggleIntegratedTerminal', comment: ['&& denotes a mnemonic'] }, "&&Terminal"),
+		mnemonicTitle: { value: nls.localize({ key: 'miToggleIntegratedTerminal', comment: ['&& denotes a mnemonic'] }, "&&Terminal"), original: '&&Terminal' },
 		keybindings: {
 			primary: KeyMod.CtrlCmd | KeyCode.Backquote,
 			mac: { primary: KeyMod.WinCtrl | KeyCode.Backquote }

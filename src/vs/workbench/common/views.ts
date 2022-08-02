@@ -28,6 +28,7 @@ import { Codicon } from 'vs/base/common/codicons';
 import { registerIcon } from 'vs/platform/theme/common/iconRegistry';
 import { CancellationToken } from 'vs/base/common/cancellation';
 import { VSDataTransfer } from 'vs/base/common/dataTransfer';
+import { ILocalizedString } from 'vs/platform/action/common/action';
 
 export const defaultViewIcon = registerIcon('default-view-icon', Codicon.window, localize('defaultViewIcon', 'Default view icon.'));
 
@@ -54,8 +55,8 @@ export function ViewContainerLocationToString(viewContainerLocation: ViewContain
 
 type OpenCommandActionDescriptor = {
 	readonly id: string;
-	readonly title?: string;
-	readonly mnemonicTitle?: string;
+	readonly title?: ILocalizedString | string;
+	readonly mnemonicTitle?: ILocalizedString | string;
 	readonly order?: number;
 	readonly keybindings?: IKeybindings & { when?: ContextKeyExpression };
 };

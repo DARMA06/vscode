@@ -71,7 +71,7 @@ Registry.as<IViewsRegistry>(ViewContainerExtensions.ViewsRegistry).registerViews
 	ctorDescriptor: new SyncDescriptor(OutputViewPane),
 	openCommandActionDescriptor: {
 		id: 'workbench.action.output.toggleOutput',
-		mnemonicTitle: nls.localize({ key: 'miToggleOutput', comment: ['&& denotes a mnemonic'] }, "&&Output"),
+		mnemonicTitle: { value: nls.localize({ key: 'miToggleOutput', comment: ['&& denotes a mnemonic'] }, "&&Output"), original: '&&Output' },
 		keybindings: {
 			primary: KeyMod.CtrlCmd | KeyMod.Shift | KeyCode.KeyU,
 			linux: {

@@ -144,7 +144,7 @@ Registry.as<IViewsRegistry>(ViewContainerExtensions.ViewsRegistry).registerViews
 	ctorDescriptor: new SyncDescriptor(MarkersView),
 	openCommandActionDescriptor: {
 		id: 'workbench.actions.view.problems',
-		mnemonicTitle: localize({ key: 'miMarker', comment: ['&& denotes a mnemonic'] }, "&&Problems"),
+		mnemonicTitle: { value: localize({ key: 'miMarker', comment: ['&& denotes a mnemonic'] }, "&&Problems"), original: '&&Problems' },
 		keybindings: { primary: KeyMod.CtrlCmd | KeyMod.Shift | KeyCode.KeyM },
 		order: 0,
 	}
